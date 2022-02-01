@@ -12,7 +12,7 @@ const myBDtrans6 = ['хотя',   'осуществлять', 'цель',  'ос
 const number = document.querySelector('.number');
 const thatas = document.querySelector('.that_was');
 const num = +number.textContent;
-
+let modalbody = document.querySelector(".modal-body");
 // *********************************************
 let randnum;
 let chosen_word;
@@ -180,7 +180,14 @@ function end(i){
     document.location.reload();
  })
  number.addEventListener('mouseover', ()=>{
-    modalwindow.innerHTML = '<div class="modal-body"><a href="index.html">4</a><a href="index2.html">5</a><a href="index3.html">6</a></div>'
+    modalbody.innerHTML = '<a href="index.html">4</a><a href="index2.html">5</a><a href="index3.html">6</a>'
     modalwindow.classList.remove('modal-hidden');
- })
+ });
+
+ document.addEventListener('click', (event) =>{
+     let box = modalbody.getBoundingClientRect();
+    if((event.clientX > box.right || event.clientX < box.left || event.clientY > box.bottom || event.clientY < box.top)){
+        modalwindow.classList.add('modal-hidden');  
+    }
+ });
  modalwindow.classList.add('modal-hidden');
