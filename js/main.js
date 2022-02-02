@@ -51,6 +51,7 @@ console.log(chosen_word);
 // **********************************************************
 const buttons = document.querySelectorAll('.key');
 const cells = document.querySelectorAll('.sq');
+
 const modalwindow = document.querySelector(".modal-container");
 const modalbutton = document.querySelector(".modalbut");
 let i;
@@ -178,16 +179,17 @@ function end(i){
 
  modalbutton.addEventListener('click', ()=>{
     document.location.reload();
- })
- number.addEventListener('mouseover', ()=>{
+ });
+ number.addEventListener('click', ()=>{
     modalbody.innerHTML = '<a href="index.html">4</a><a href="index2.html">5</a><a href="index3.html">6</a>'
-    modalwindow.classList.remove('modal-hidden');
- });
+    modalwindow.classList.remove('modal-hidden');  
+});
+    
+//  document.addEventListener('click', (event) =>{
+//     let box = modalbody.getBoundingClientRect();
+//    if((event.clientX > box.right || event.clientX < box.left || event.clientY > box.bottom || event.clientY < box.top)){
+//        modalwindow.classList.add('modal-hidden');  
+//    }
+// });
 
- document.addEventListener('click', (event) =>{
-     let box = modalbody.getBoundingClientRect();
-    if((event.clientX > box.right || event.clientX < box.left || event.clientY > box.bottom || event.clientY < box.top)){
-        modalwindow.classList.add('modal-hidden');  
-    }
- });
- modalwindow.classList.add('modal-hidden');
+
