@@ -180,15 +180,21 @@ function end(i){
  modalbutton.addEventListener('click', ()=>{
     document.location.reload();
  });
+
+ let modalbody2 = document.querySelector(".modal-body2");
+ let modalwindow2 = document.querySelector(".modal-container2");
+
+
  number.addEventListener('click', ()=>{
-    modalbody.innerHTML = '<a href="index.html">4</a><a href="index2.html">5</a><a href="index3.html">6</a>'
-    modalwindow.classList.remove('modal-hidden');  
+    modalbody2.innerHTML = '<a href="index.html">4</a><a href="index2.html">5</a><a href="index3.html">6</a>'
+    modalwindow2.classList.remove('modal-hidden');  
 });
     
 //  document.addEventListener('click', (event) =>{
-//     let box = modalbody.getBoundingClientRect();
+//     modalbody2 = document.querySelector(".modal-body2");
+//     let box = modalbody2.getBoundingClientRect();
 //    if((event.clientX > box.right || event.clientX < box.left || event.clientY > box.bottom || event.clientY < box.top)){
-//        modalwindow.classList.add('modal-hidden');  
+//        modalwindow2.classList.add('modal-hidden');  
 //    }
 // });
 

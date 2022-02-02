@@ -68,7 +68,7 @@ a{
     color: #fff;
     border-radius: 31%;
 }  
-.modal-container {
+.modal-container, .modal-container2 {
     position: absolute;
     top: 0;
     left: 0;
@@ -79,7 +79,7 @@ a{
     align-items: center;
     background-color: #0000004d;
 }
-.modal-body {
+.modal-body, .modal-body2 {
     display: flex;
     align-items: center;
     flex-direction: column;
