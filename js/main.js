@@ -186,10 +186,21 @@ function end(i){
 
 
  number.addEventListener('click', ()=>{
-    modalbody2.innerHTML = '<a href="index.html">4</a><a href="index2.html">5</a><a href="index3.html">6</a>'
-    modalwindow2.classList.remove('modal-hidden');  
+    modalbody2.innerHTML = '<div id="four" tabindex="2"></div><a href="index.html">4</a></div>   <a href="index2.html">5</a><a href="index3.html">6</a>'
+    modalwindow2.classList.remove('modal-hidden'); 
+    modwind.focus();
+
 });
+
+  modwind.onblur = function(){
+    setTimeout( function(){
+        modalwindow2.classList.add('modal-hidden'); 
+      }, 200 );
     
+
+}
+
+
 //  document.addEventListener('click', (event) =>{
 //     modalbody2 = document.querySelector(".modal-body2");
 //     let box = modalbody2.getBoundingClientRect();
@@ -197,5 +208,4 @@ function end(i){
 //        modalwindow2.classList.add('modal-hidden');  
 //    }
 // });
-
 
