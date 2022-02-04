@@ -2,11 +2,11 @@
 const myBD4 =      ['gain',     'grab',    'lead',   'rely',         'doom',        'dare'     ];
 const myBDtrans4 = ['получать', 'хватать', 'вести' , 'положиться', 'обрекать', 'осмеливаться'        ];
 
-const myBD5 =      ['hoard', 'rival',    'doubt',        'seize', 'aisle',  'trump' ];
-const myBDtrans5 = ['запас', 'соперник', 'сомнение', 'схватить', 'проход', 'превзойти'];
+const myBD5 =      ['hoard', 'rival',    'doubt',        'seize', 'aisle',  'trump', 'elude' ];
+const myBDtrans5 = ['запас', 'соперник', 'сомнение', 'схватить', 'проход', 'превзойти', 'ускользать' ];
 
-const myBD6 =      ['albeit', 'fulfil'     , 'target', 'insult',    'legacy'];
-const myBDtrans6 = ['хотя',   'осуществлять', 'цель',  'оскорблять', 'наследие'];
+const myBD6 =      ['albeit', 'fulfil'     , 'target', 'insult',    'legacy' , 'render'];
+const myBDtrans6 = ['хотя',   'осуществлять', 'цель',  'оскорблять', 'наследие', 'оказывать'];
 
 // Определение длині слова
 const number = document.querySelector('.number');
